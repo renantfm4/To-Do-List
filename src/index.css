@@ -1,0 +1,191 @@
+* {
+  background-color: #8758ff;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+.App{
+  max-width: 470px;
+  min-height: 350px;
+  background-color: #514869;
+  box-shadow: 10px 20px 20px rgb(85, 37, 163);
+  margin: -250px auto;
+  padding: 30px;
+  border-radius: 10%;
+}
+
+ul li{
+  list-style: none;
+  border: 2px solid rgb(148, 148, 150);
+  margin: 10px 0 white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  background-color: #514869;
+}
+
+ul li span{
+  background-color: #514869;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul li input, .row input{
+  margin-right: 5px;
+  transform: translateY(1px);
+  
+}
+
+ul li input:checked + span{
+  color:#00ff88;
+  background-color: #514869;
+}
+
+
+ul li button, .many button{
+  border: none;
+  outline: none;
+  color: white;
+  background: rgb(116, 205, 240);
+  box-shadow: 3px 3px 10px rgb(116, 205, 240);
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+ul li button, .many button:hover{
+  transform: scale(1.1);
+}
+
+ul li button:disabled{
+  opacity: 0.3;
+}
+form{
+  height: 45px;
+  display: flex;
+  background-color: #514869;
+  margin: 20px 0;
+  
+}
+
+form input, form button{
+  box-shadow: 5px 5px 14px black;
+  flex:1;
+  margin: 0 3px;
+}
+
+form button{
+  background: #00ff88;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+form button:hover{
+  transform:scale(1.1);
+}
+
+h1{
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  background-color: #514869;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.many{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #514869;
+}
+
+.many input{
+  display: none;
+}
+
+.many #delete{
+  background: rgb(218, 0, 44);
+  box-shadow: 3px 3px 10px rgb(220, 20, 60);
+  border-radius: 10px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label{
+  cursor: pointer;
+  background-color: #514869;
+}
+
+.marcar{
+  background-color: #514869;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.many input + span:before{
+  content: '';
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid gray;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.many input:checked + span:before {
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: rgb(75, 223, 75);
+  background-position: center;
+  border: none;
+  padding: 1px;
+}
+
+input{
+  background-color: white;
+}
+
+.Orc{
+  margin:auto;
+}
+
+.Orc img{
+  position: relative;
+  width: 240px;
+  height: 240px;
+  transition: 1s;
+  margin: 300px 100px -200px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.Orc img:hover{
+  transform:scale(1.4);
+  box-shadow: 0 35px 60px rgba(0,0,0,.5);
+}
+
+.content p{
+  position: absolute;
+  top: 80%;
+  left: 2%;
+  background-color: none;
+  color: #3ef7a0;
+  font-size: larger;
+  text-align: center;
+  padding: -80px 0px 20px;
+  transition: 0.5s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 15px 5px 5px #555;
+  cursor: pointer;
+}
+
+.Orc p:hover{
+  transform: scale(1.1);
+}
